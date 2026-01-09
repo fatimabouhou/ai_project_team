@@ -30,7 +30,7 @@ except:
 
 st.set_page_config(
     page_title="Traffic AI Classifier",
-    page_icon="📊",
+    page_icon="🚗",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -550,9 +550,6 @@ if failed_models:
     for failed in failed_models[:3]:
         st.sidebar.markdown(f"• {failed.split(':')[0]}")
 
-st.sidebar.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
-st.sidebar.markdown("**Version :** 2.0.0")
-st.sidebar.markdown("**Date :** Janvier 2026")
 
 # ====================================================================
 # PAGE 1 : VIDÉOS
@@ -1122,16 +1119,3 @@ elif page == "Documentation":
     """
     st.markdown(file_info, unsafe_allow_html=True)
 
-# ====================================================================
-# FOOTER
-# ====================================================================
-
-st.markdown(f"""
-<div style="margin-top: 3rem; padding: 1.5rem; text-align: center; 
-            color: {COLORS['text_light']}; font-size: 0.9rem; border-top: 1px solid {COLORS['neutral_medium']};">
-    <p style="margin: 0; font-weight: 500;">Traffic AI Classifier | Version 2.0.0 | Janvier 2026</p>
-    <p style="margin: 0.5rem 0 0 0; color: {COLORS['neutral_dark']}; font-size: 0.8rem;">
-        Système d'analyse de comportement routier par Intelligence Artificielle
-    </p>
-</div>
-""", unsafe_allow_html=True)
