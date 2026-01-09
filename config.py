@@ -1,8 +1,8 @@
 # Configuration File
 
 # Define Video Paths
-IN_VIDEO_PATH = "./data/vehicles.mp4"
-OUT_VIDEO_PATH = "./data/vehicles_output.mp4"
+IN_VIDEO_PATH = "./data/vehicles3.mp4"
+OUT_VIDEO_PATH = "./data/vehicles_output2.mp4"
 
 # YOLO Model Path
 # To switch to a custom model, update the path below
