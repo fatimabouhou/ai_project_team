@@ -349,7 +349,7 @@ class Config:
     VIDEO_INPUT = DATA_DIR / "vehicles.mp4"
     VIDEO_OUTPUT = DATA_DIR / "vehicles_output.mp4"
 
-    CSV_FEATURES = BASE_DIR / "vehicle_features_labeled.csv"
+    CSV_FEATURES = BASE_DIR / "vehicle_features_labeled_updated.csv"
 
     MODELS = {
         "SVM": ("svm_model.pkl", "svm_scaler.pkl"),
