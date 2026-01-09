@@ -67,10 +67,9 @@ class SVMTrainer:
         print()
         
         feature_cols = [
-            'speed', 'relative_speed', 'acceleration',
-            'distance_to_nearest', 'direction_change'
+        'speed', 'relative_speed', 'avg_traffic_speed',
+        'acceleration', 'distance_to_nearest', 'direction_change'
         ]
-        
         missing_cols = [col for col in feature_cols if col not in self.df.columns]
         if missing_cols:
             raise ValueError(f"Colonnes manquantes : {missing_cols}")

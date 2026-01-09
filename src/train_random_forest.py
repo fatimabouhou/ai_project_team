@@ -65,8 +65,8 @@ class RandomForestTrainer:
         print()
         
         feature_cols = [
-            'speed', 'relative_speed', 'acceleration',
-            'distance_to_nearest', 'direction_change'
+        'speed', 'relative_speed', 'avg_traffic_speed',
+        'acceleration', 'distance_to_nearest', 'direction_change'
         ]
         
         self.feature_names = feature_cols
